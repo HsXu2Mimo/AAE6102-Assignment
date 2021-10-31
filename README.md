@@ -25,6 +25,9 @@ The code can be divided into two main part.
 
 ##  Results
 ### Satellite position
+
+The detailed claculation is in the Assignment report.
+
 The calculated satellite ECEF position,
 | PRN | ECEF-X          | ECEF-Y          | ECEF-Z          |
 | --- | --------------- | --------------- | --------------- |
@@ -43,7 +46,12 @@ The satellites’ ECEF-positions in the geographic map are shown in follows
 </p>
 
 ### Satellite clock error
+<p align="left">
+<img src="img/eq_fig/eq_clk.PNG">
+</p>
+
 The code phase offset and satellite clock error
+
 | PRN | code phase offset (s) | satellite clock error (m) |
 | --- | --------------------- | ------------------------- |
 | 5   | 1.8907E-04            | 56680.48                  |
