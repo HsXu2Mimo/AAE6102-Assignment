@@ -61,27 +61,50 @@ The code phase offset and satellite clock error
 </p>
 
 | PRN | tropospheric delay (m) |
-| --- | ---------------------- |
-| 5   | 11.653                 |
-| 6   | 2.464                  |
-| 10  | 4.846                  |
-| 17  | 3.180                  |
-| 22  | 8.513                  |
-| 23  | 6.329                  |
-| 26  | 9.660                  |
-| 30  | 3.659                  |
+| --- | ---------|
+| 5   | 11.653   |
+| 6   | 2.464    |
+| 10  | 4.846    |
+| 17  | 3.180    |
+| 22  | 8.513    |
+| 23  | 6.329    |
+| 26  | 9.660    |
+| 30  | 3.659    |
 
 ### User Location
 
+<p align="left">
+<img src="img/eq_fig/eq_pr.PNG">
+</p>
+
 The geometry of satellites
 <p align="center">
 <img src="img/Fig 5.he geometry of satellites. The number indicates the pseudo-random noise (PRN) of the satellite.png">
 </p>
 
+| Step | ECEF-X (m)    | ECEF-Y (m)    | ECEF-Z (m)  | delt_pos(m) |
+| ---- | ------------- | ------------- | ----------- | -------------- |
+| 0    | \-2694685.473 | \-4293642.366 | 3857878.924 | 0              |
+| 1    | \-2700420.267 | \-4292537.554 | 3855266.014 | 6.39811E+03    |
+| 2    | \-2700420.399 | \-4292537.654 | 3855266.119 | 1.95321E-01    |
+| 3    | \-2700420.399 | \-4292537.654 | 3855266.119 | 6.72172E-08    |
 
-The geometry of satellites
+
+The position for the first and final iteration is shown in 
 <p align="center">
-<img src="img/Fig 5.he geometry of satellites. The number indicates the pseudo-random noise (PRN) of the satellite.png">
+<img src="img/Fig 6.The position for the first and final iteration..png">
 </p>
 
-The
+The user clock bias b for each step is shown in 
+| Step | clock bias(second) |
+| ---- | ------------------ |
+| 0    | 0          | 0     |
+| 1    | 5.194503E+05   | 1.732700E-03 |
+| 2    | 5.194497E+05   | 1.732698E-03 |
+
+
+
+## References
+1.	E. D. K. C. J. Hegarty, Understanding GPS Principles and Application. Artech house, 2005.
+2.	N. the National Coordination Office for Space-Based Positioning, and Timing. "Interface Control Documents of the GPS program." the National Coordination Office for Space-Based Positioning, Navigation, and Timing. (accessed 28.oct, 2021).
+3.	J. Saastamoinen, "Contributions to the theory of atmospheric refraction," Bulletin Géodésique (1946-1975), vol. 105, no. 1, pp. 279-298, 1972/09/01 1972, doi: 10.1007/BF02521844.
